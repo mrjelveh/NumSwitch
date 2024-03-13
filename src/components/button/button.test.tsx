@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Button } from './button';
+import { Button } from './button.component';
 
 test('renders button with label', () => {
     const label = 'Click me';

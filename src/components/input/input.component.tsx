@@ -1,21 +1,15 @@
 import React, { ChangeEvent } from 'react';
-import './input.scss';
+import { InputProps } from './input.shared';
+import './input.styles.scss';
 
-interface InputProps {
-    value: string;
-    onChange: (value: string) => void;
-    className?: string;
-    fullWidth?: boolean;
-}
-
-const Input: React.FC<InputProps> = ({ value, onChange, fullWidth, className }) => {
+const Input: React.FC<InputProps> = ({ type, value, onChange, fullWidth, className }) => {
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
         onChange(event.target.value);
     };
 
     return (
         <input 
-        type="text" 
+        type={type ? type : 'text'} 
         value={value} 
         onChange={handleInputChange}
         className={['ns-input', fullWidth ? 'ns-input--full-width' : '', className ? className : ''].join(' ').trim()} />

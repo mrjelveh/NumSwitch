@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './button';
+import { Button } from './button.component';
 import 'tailwindcss/tailwind.css';
 
 
@@ -23,6 +23,7 @@ const meta = {
       },
     },
     secondary: { control: 'boolean' },
+    disabled: { control: 'boolean' },
     onClick: { action: 'clicked' },
   },
 } satisfies Meta<typeof Button>;
@@ -41,6 +42,13 @@ export const Secondary: Story = {
   args: {
     label: 'Button',
     secondary: true,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Button',
+    disabled: true,
   },
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
-import Select, { Option } from './select';
+import { render } from '@testing-library/react';
+import { Option } from './select.shared';
+import Select from './select.component';
 
 const options: Option[] = [
     { value: 'option1', label: 'Option 1', disabled: false },

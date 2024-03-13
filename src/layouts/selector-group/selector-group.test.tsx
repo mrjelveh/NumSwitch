@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import SelectorGroup from './selector-group';
-import { Option } from '../../components/select/select';
+import { Option } from '../../components/select/select.shared';
+import SelectorGroup from './selector-group.layout';
 
 describe('SelectorGroup', () => {
     const fromSelectArray: Option[] = [

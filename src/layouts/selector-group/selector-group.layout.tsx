@@ -1,5 +1,6 @@
 import React from 'react';
-import Select, { Option } from '../../components/select/select';
+import Select from '../../components/select/select.component';
+import { Option } from '../../components/select/select.shared';
 
 type SelectorGroup = {
     fromSelectArray: Option[];

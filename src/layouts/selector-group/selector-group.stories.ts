@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import SelectorGroup from './selector-group';
+import SelectorGroup from './selector-group.layout';
 import 'tailwindcss/tailwind.css';
 
 const meta = {

@@ -1,0 +1,18 @@
+.ns-input {
+    @apply text-base border border-teal-500 focus:border-teal-700 outline-none px-3 py-2 hover:border-teal-700;
+
+    &--full-width {
+        @apply w-full;
+    }
+
+    &[type="number"] {
+        -moz-appearance: textfield;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        @apply appearance-none;
+    }
+}

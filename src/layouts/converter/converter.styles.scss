@@ -1,0 +1,19 @@
+.ns-converter {
+    @apply container mx-auto px-4;
+
+    &__flex-container {
+        @apply flex justify-center items-center h-dvh;
+    }
+
+    &__selector-group {
+        @apply mb-4;
+    }
+
+    &__flex-wrapper {
+        @apply flex;
+    }
+
+    &__output {
+        @apply text-center text-4xl mt-5 min-h-16;
+    }
+}

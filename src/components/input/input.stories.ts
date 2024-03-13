@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Input from './input';
+import Input from './input.component';
 import 'tailwindcss/tailwind.css';
 
 const meta = {
@@ -10,6 +10,7 @@ const meta = {
     },
     tags: ['autodocs'],
     argTypes: {
+        type: { control: 'text' },
         value: { control: 'text' },
         fullWidth: { control: 'boolean' },
         onChange: { action: 'changed' },
@@ -23,6 +24,13 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         value: '',
+    },
+};
+
+export const DifferentType: Story = {
+    args: {
+        value: '',
+        type: 'number'
     },
 };
 

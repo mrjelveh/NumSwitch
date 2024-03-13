@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Input from './input';
+import Input from './input.component';
 
 describe('Input', () => {
     test('renders without crashing', () => {
