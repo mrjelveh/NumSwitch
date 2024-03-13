@@ -3,7 +3,7 @@ import Input from './input';
 import 'tailwindcss/tailwind.css';
 
 const meta = {
-    title: 'Example/Input',
+    title: 'Components/Input',
     component: Input,
     parameters: {
         layout: 'centered',

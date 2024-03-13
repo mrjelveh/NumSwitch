@@ -3,7 +3,7 @@ import Select from './select';
 import 'tailwindcss/tailwind.css';
 
 const meta = {
-    title: 'Example/Select',
+    title: 'Components/Select',
     component: Select,
     parameters: {
         layout: 'centered',
