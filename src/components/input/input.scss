@@ -1,0 +1,7 @@
+.ns-input {
+    @apply border border-teal-500 focus:border-teal-700 outline-none px-3 py-2 hover:border-teal-700;
+
+    &--full-width {
+        @apply w-full;
+    }
+}
